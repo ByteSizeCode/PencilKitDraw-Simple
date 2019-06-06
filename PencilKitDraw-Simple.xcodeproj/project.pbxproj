@@ -7,34 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA4FD8922278E5F5000FE6C3 /* ThumbnailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4FD8912278E5F5000FE6C3 /* ThumbnailCollectionViewController.swift */; };
 		DA4FD8AE2278F074000FE6C3 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4FD8AD2278F074000FE6C3 /* DataModel.swift */; };
-		DA67042F22946742004011A1 /* PencilKitDrawNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADCBC1A2290DEB300236FA7 /* PencilKitDrawNavigationController.swift */; };
 		DAB023A82278AC4C005102E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB023A72278AC4C005102E6 /* AppDelegate.swift */; };
 		DAB023AA2278AC4C005102E6 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB023A92278AC4C005102E6 /* DrawingViewController.swift */; };
 		DAB023AD2278AC4C005102E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB023AB2278AC4C005102E6 /* Main.storyboard */; };
 		DAB023AF2278AC4E005102E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB023AE2278AC4E005102E6 /* Assets.xcassets */; };
 		DAB023B22278AC4E005102E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB023B02278AC4E005102E6 /* LaunchScreen.storyboard */; };
-		DAB860E9227CE6DA009C9B1D /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB860E8227CE6DA009C9B1D /* SignatureViewController.swift */; };
-		DAC481D5227A1AA10076D01F /* ThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC481D4227A1AA10076D01F /* ThumbnailCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A7D2C3A22A8DFE700FB4CD5 /* PencilKitDraw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PencilKitDraw.entitlements; sourceTree = "<group>"; };
 		9C720C209C7206E000000001 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		DA4FD8912278E5F5000FE6C3 /* ThumbnailCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCollectionViewController.swift; sourceTree = "<group>"; };
 		DA4FD8AD2278F074000FE6C3 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		DAB023A42278AC4C005102E6 /* PencilKitDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PencilKitDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB023A42278AC4C005102E6 /* PencilKitDraw-Simple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PencilKitDraw-Simple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB023A72278AC4C005102E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAB023A92278AC4C005102E6 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
 		DAB023AC2278AC4C005102E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAB023AE2278AC4E005102E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAB023B12278AC4E005102E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAB023B32278AC4E005102E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAB860E8227CE6DA009C9B1D /* SignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
-		DAC481D4227A1AA10076D01F /* ThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
-		DADCBC1A2290DEB300236FA7 /* PencilKitDrawNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilKitDrawNavigationController.swift; sourceTree = "<group>"; };
-		E7D5A4A0E7D5A57000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
-		E7E7D0A0E7E7D00000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		E7E7D0A0E7E7D00000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,75 +44,53 @@
 			isa = PBXGroup;
 			children = (
 				9C720C209C7206E000000001 /* README.md */,
-				DAB023A62278AC4C005102E6 /* PencilKitDraw */,
+				DAB023A62278AC4C005102E6 /* PencilKitDraw-Simple */,
 				DAB023A52278AC4C005102E6 /* Products */,
-				EA04BAF0EA04882000000001 /* Configuration */,
-				E7C3D3B0E7C3CF2000000001 /* LICENSE */,
+				E7E7D0A0E7E7D00000000001 /* LICENSE.txt */,
 			);
 			sourceTree = "<group>";
 		};
 		DAB023A52278AC4C005102E6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DAB023A42278AC4C005102E6 /* PencilKitDraw.app */,
+				DAB023A42278AC4C005102E6 /* PencilKitDraw-Simple.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DAB023A62278AC4C005102E6 /* PencilKitDraw */ = {
+		DAB023A62278AC4C005102E6 /* PencilKitDraw-Simple */ = {
 			isa = PBXGroup;
 			children = (
+				6A7D2C3A22A8DFE700FB4CD5 /* PencilKitDraw.entitlements */,
 				DAB023A72278AC4C005102E6 /* AppDelegate.swift */,
 				DA4FD8AD2278F074000FE6C3 /* DataModel.swift */,
-				DADCBC1A2290DEB300236FA7 /* PencilKitDrawNavigationController.swift */,
-				DA4FD8912278E5F5000FE6C3 /* ThumbnailCollectionViewController.swift */,
-				DAC481D4227A1AA10076D01F /* ThumbnailCollectionViewCell.swift */,
 				DAB023A92278AC4C005102E6 /* DrawingViewController.swift */,
-				DAB860E8227CE6DA009C9B1D /* SignatureViewController.swift */,
 				DAB023AB2278AC4C005102E6 /* Main.storyboard */,
 				DAB023AE2278AC4E005102E6 /* Assets.xcassets */,
 				DAB023B02278AC4E005102E6 /* LaunchScreen.storyboard */,
 				DAB023B32278AC4E005102E6 /* Info.plist */,
 			);
-			path = PencilKitDraw;
-			sourceTree = "<group>";
-		};
-		E7C3D3B0E7C3CF2000000001 /* LICENSE */ = {
-			isa = PBXGroup;
-			children = (
-				E7E7D0A0E7E7D00000000001 /* LICENSE.txt */,
-			);
-			name = LICENSE;
-			path = LICENSE;
-			sourceTree = "<group>";
-		};
-		EA04BAF0EA04882000000001 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				E7D5A4A0E7D5A57000000001 /* SampleCode.xcconfig */,
-			);
-			name = Configuration;
+			path = "PencilKitDraw-Simple";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DAB023A32278AC4C005102E6 /* PencilKitDraw */ = {
+		DAB023A32278AC4C005102E6 /* PencilKitDraw-Simple */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAB023B62278AC4E005102E6 /* Build configuration list for PBXNativeTarget "PencilKitDraw" */;
+			buildConfigurationList = DAB023B62278AC4E005102E6 /* Build configuration list for PBXNativeTarget "PencilKitDraw-Simple" */;
 			buildPhases = (
 				DAB023A02278AC4C005102E6 /* Sources */,
 				DAB023A12278AC4C005102E6 /* Frameworks */,
 				DAB023A22278AC4C005102E6 /* Resources */,
-				9C51C6509C5130A000000001,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PencilKitDraw;
+			name = "PencilKitDraw-Simple";
 			productName = PKTest;
-			productReference = DAB023A42278AC4C005102E6 /* PencilKitDraw.app */;
+			productReference = DAB023A42278AC4C005102E6 /* PencilKitDraw-Simple.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -131,14 +101,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
-				ORGANIZATIONNAME = Apple;
+				ORGANIZATIONNAME = IsaacRaval;
 				TargetAttributes = {
 					DAB023A32278AC4C005102E6 = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
 			};
-			buildConfigurationList = DAB0239F2278AC4C005102E6 /* Build configuration list for PBXProject "PencilKitDraw" */;
+			buildConfigurationList = DAB0239F2278AC4C005102E6 /* Build configuration list for PBXProject "PencilKitDraw-Simple" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -151,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DAB023A32278AC4C005102E6 /* PencilKitDraw */,
+				DAB023A32278AC4C005102E6 /* PencilKitDraw-Simple */,
 			);
 		};
 /* End PBXProject section */
@@ -175,11 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB023AA2278AC4C005102E6 /* DrawingViewController.swift in Sources */,
-				DA67042F22946742004011A1 /* PencilKitDrawNavigationController.swift in Sources */,
 				DAB023A82278AC4C005102E6 /* AppDelegate.swift in Sources */,
-				DA4FD8922278E5F5000FE6C3 /* ThumbnailCollectionViewController.swift in Sources */,
-				DAC481D5227A1AA10076D01F /* ThumbnailCollectionViewCell.swift in Sources */,
-				DAB860E9227CE6DA009C9B1D /* SignatureViewController.swift in Sources */,
 				DA4FD8AE2278F074000FE6C3 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +174,6 @@
 /* Begin XCBuildConfiguration section */
 		DAB023B42278AC4E005102E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7D5A4A0E7D5A57000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -270,7 +235,6 @@
 		};
 		DAB023B52278AC4E005102E6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7D5A4A0E7D5A57000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -326,21 +290,23 @@
 		};
 		DAB023B72278AC4E005102E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7D5A4A0E7D5A57000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PencilKitDraw/PencilKitDraw.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = PencilKitDraw/Info.plist;
+				INFOPLIST_FILE = "PencilKitDraw-Simple/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.PencilKitDraw${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.IsaacRaval.PencilKitDraw-Simple";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SUPPORTS_UIKITFORMAC = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -348,21 +314,23 @@
 		};
 		DAB023B82278AC4E005102E6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7D5A4A0E7D5A57000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PencilKitDraw/PencilKitDraw.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = PencilKitDraw/Info.plist;
+				INFOPLIST_FILE = "PencilKitDraw-Simple/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.PencilKitDraw${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.IsaacRaval.PencilKitDraw-Simple";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SUPPORTS_UIKITFORMAC = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -371,7 +339,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DAB0239F2278AC4C005102E6 /* Build configuration list for PBXProject "PencilKitDraw" */ = {
+		DAB0239F2278AC4C005102E6 /* Build configuration list for PBXProject "PencilKitDraw-Simple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DAB023B42278AC4E005102E6 /* Debug */,
@@ -380,7 +348,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAB023B62278AC4E005102E6 /* Build configuration list for PBXNativeTarget "PencilKitDraw" */ = {
+		DAB023B62278AC4E005102E6 /* Build configuration list for PBXNativeTarget "PencilKitDraw-Simple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DAB023B72278AC4E005102E6 /* Debug */,

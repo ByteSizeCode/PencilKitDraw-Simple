@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jUh-rh-OdM">
+    <device id="ipad10_5" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Drawing View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="DrawingViewController" id="BYZ-38-t0r" customClass="DrawingViewController" customModule="PencilKitDraw_Simple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozl-G5-8Cu" customClass="PKCanvasView">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ozl-G5-8Cu" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="EO0-jL-xZM"/>
+                            <constraint firstItem="ozl-G5-8Cu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="V4s-yR-5h8"/>
+                            <constraint firstItem="ozl-G5-8Cu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WhK-hz-5jD"/>
+                            <constraint firstItem="ozl-G5-8Cu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="enG-23-J1w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fiv-5U-HZM">
+                        <leftBarButtonItems>
+                            <barButtonItem systemItem="undo" id="vQi-JN-vlr">
+                                <connections>
+                                    <action selector="undo:" destination="dkx-z0-nzr" id="4qI-9R-EQJ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="redo" id="0Nh-lV-o2K">
+                                <connections>
+                                    <action selector="redo:" destination="dkx-z0-nzr" id="hrB-KE-4kg"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Pencil" id="8cr-Wb-SnU">
+                            <connections>
+                                <action selector="toggleFingerPencilDrawing:" destination="BYZ-38-t0r" id="SP4-bN-aPM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="canvasView" destination="ozl-G5-8Cu" id="Nnl-hg-fJ2"/>
+                        <outlet property="pencilFingerBarButtonItem" destination="8cr-Wb-SnU" id="bpC-rG-p6b"/>
+                        <outlet property="redoBarButtonItem" destination="0Nh-lV-o2K" id="YnF-zT-Mi2"/>
+                        <outlet property="undoBarButtonitem" destination="vQi-JN-vlr" id="P9F-JN-De4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1843.1654676258995" y="207.73381294964028"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qvc-Tv-A9P">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jUh-rh-OdM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H1q-Ql-cKx">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="csB-8D-ION"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ekl-Oa-S0r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1090.6474820143885" y="207.73381294964028"/>
+        </scene>
+    </scenes>
+</document>
