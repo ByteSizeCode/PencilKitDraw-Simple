@@ -28,17 +28,49 @@ class DrawingViewController: UIViewController, PKCanvasViewDelegate, PKToolPicke
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        // Set up the tool picker, using the window of our parent because our view has not
-        // been added to a window yet.
-        if let window = parent?.view.window, let toolPicker = PKToolPicker.shared(for: window) {
-            toolPicker.setVisible(true, forFirstResponder: canvasView)
-            toolPicker.addObserver(canvasView)
-            toolPicker.addObserver(self)
-            canvasView.becomeFirstResponder() //Show drawing tools
+//        // Set up the tool picker, using the window of our parent because our view has not
+//        // been added to a window yet.
+//        if let window = parent?.view.window, let toolPicker = PKToolPicker.shared(for: window) {
+//            toolPicker.setVisible(true, forFirstResponder: canvasView)
+//            toolPicker.addObserver(canvasView)
+//            toolPicker.addObserver(self)
+//            canvasView.becomeFirstResponder() //Show drawing tools
+//        }
+//
+//        parent?.view.window?.windowScene?.screenshotService?.delegate = self
+        
+        //      self.showPicker()
+                self.perform(#selector(showPicker), with: self, afterDelay: 0)
+    }
+    @objc private func showPicker() {
+         guard let window = UIApplication.shared.windows.filter({ $0.windowScene?.activationState == .foregroundActive }).first else {
+             return
+         }
+
+         let picker = PKToolPicker.shared(for: window)
+         if let picker = picker, picker.isVisible {
+             return
+         }
+
+         print("Picker not visible")
+         picker?.setVisible(true, forFirstResponder: canvasView)
+         picker?.addObserver(canvasView)
+         picker?.addObserver(self)
+        
+        if #available(iOS 14.0, *)
+        {
+            // fixed for iOS 14
+            canvasView.becomeFirstResponder()
+            canvasView.resignFirstResponder()
+            canvasView.becomeFirstResponder()
+        }
+        else
+        {
+            canvasView.becomeFirstResponder()
         }
         
-        parent?.view.window?.windowScene?.screenshotService?.delegate = self
-    }
+         self.perform(#selector(showPicker), with: self, afterDelay: 0.5)
+     }
     
     // When the view is resized, adjust the canvas scale so that it is zoomed to the default `canvasWidth`.
     override func viewDidLayoutSubviews() {
@@ -72,6 +104,7 @@ class DrawingViewController: UIViewController, PKCanvasViewDelegate, PKToolPicke
         return true
     }
 }
+
 
 //Helper Functions
 extension DrawingViewController {
